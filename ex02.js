@@ -1,20 +1,13 @@
-const numero = parseInt(prompt('Entre  com um número positivo: '));
-let n1 = 0,
-  n2 = 1,
-  proxTermo;
-
-console.log('Fibonacci Series:');
-console.log(n1); // print 0
-console.log(n2); // print 1
-
-proxTermo = n1 + n2;
-
-while (proxTermo <= numero) {
-  // print the next term
-  console.log(proxTermo);
-
-  n1 = n2;
-  n2 = proxTermo;
-  proxTermo = n1 + n2;
-}
-if (number )
+const fibonacci = (lista, count = 1, ultimo = 0) => {
+  if (count < lista) {
+    return fibonacci(lista, count + ultimo, count);
+  }
+  if (count === lista) {
+    return true;
+  }
+  return false;
+};
+console.log(fibonacci(10));
+console.log(fibonacci(55));
+console.log(fibonacci(89));
+console.log(fibonacci(534));
